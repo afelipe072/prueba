@@ -1,0 +1,34 @@
+@import '../../scss/sizes.scss';
+#map { 
+  height:  100vh; 
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  
+  
+  
+  @include tablet{
+    &.nonactive{
+        width: 92%;
+        width: calc(100% - 46px);
+        width: -moz-calc(100% - 46px);
+        width: -webkit-calc(100% - 0px);
+    }
+
+  }
+  @include desktop{
+    &.nonactive{
+      width: 97%;
+      width: calc(100% - 46px);
+      width: -moz-calc(100% - 46px);
+      width: -webkit-calc(100% - 0px);
+    } 
+  }
+}
+
+
+.leaflet-left .leaflet-control-scale {
+  margin-left: 10px;
+}
+
